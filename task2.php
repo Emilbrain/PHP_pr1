@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="assets/style/style.css">
+
+<?php
+$arr = [
+    "Спортивный" => "Сидоров",
+    "Художественный" => "Емелина",
+    "Музыкальный" => "Иванова",
+    "Литературный" => "Петров",
+    "Биологический" => "Антонова"
+];
+
+asort($arr);
+
+foreach ($arr as $arr => $surname) {
+    echo "<span><h3>$arr</h3> - $surname</span>";
+?>
+    <br>
+<?
+}
